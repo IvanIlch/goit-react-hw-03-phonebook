@@ -1,0 +1,19 @@
+.contacts {
+  border: 1px solid black;
+  padding: 0 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 240, 244);
+}
+.contacts li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  align-items: center;
+}
+.contacts li button {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(3, 169, 244, 0.87);
+}
