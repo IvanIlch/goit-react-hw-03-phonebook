@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Filter.module.css";
+import PropTypes from "prop-types";
 
 export default function Filter({ value, searchContact }) {
   return (
@@ -16,3 +17,8 @@ export default function Filter({ value, searchContact }) {
     </label>
   );
 }
+
+Filter.propTypes = {
+  value: PropTypes.string,
+  searchContact: PropTypes.func,
+};

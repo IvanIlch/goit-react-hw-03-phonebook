@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function ContactItem({ id, name, number, onDelete }) {
   return (
@@ -13,4 +14,9 @@ export default function ContactItem({ id, name, number, onDelete }) {
   );
 }
 
-//
+ContactItem.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  number: PropTypes.string,
+  onDelete: PropTypes.func,
+};

@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import ContactItem from "../contactItem/ContactItem";
 import styles from "./ContactList.module.css";
 
@@ -19,3 +21,7 @@ export default function ContactList({ visibleContact, onDelete }) {
     </>
   );
 }
+ContactList.propTypes = {
+  visibleContact: PropTypes.array,
+  onDelete: PropTypes.func,
+};
