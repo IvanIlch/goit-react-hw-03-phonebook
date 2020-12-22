@@ -19,6 +19,6 @@ export default function Filter({ value, searchContact }) {
 }
 
 Filter.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   searchContact: PropTypes.func,
 };

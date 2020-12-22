@@ -11,14 +11,11 @@ export default class App extends Component {
     filter: "",
   };
   componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate");
     if (prevState.contacts !== this.state.contacts) {
-      console.log("не равны, записуем в лс");
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }
   componentDidMount() {
-    console.log("componentDidMount");
     const contactsFromLS = localStorage.getItem("contacts");
     if (contactsFromLS) {
       this.setState({

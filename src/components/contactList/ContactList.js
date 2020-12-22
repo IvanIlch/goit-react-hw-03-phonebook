@@ -22,6 +22,12 @@ export default function ContactList({ visibleContact, onDelete }) {
   );
 }
 ContactList.propTypes = {
-  visibleContact: PropTypes.array,
+  visibleContact: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string,
+    })
+  ),
   onDelete: PropTypes.func,
 };
